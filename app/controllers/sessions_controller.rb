@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  
+
   def new
   end
 
@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
     flash[:success] = 'ログアウトしました。'
     redirect_to login_url
   end
-  
+
   private
 
   def login(email, password)
